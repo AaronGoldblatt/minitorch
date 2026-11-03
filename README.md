@@ -1,4 +1,6 @@
-# MiniTorch Module 4
+# MiniTorch — ML Framework from First Principles
+
+Tensor operations, reverse-mode automatic differentiation, CPU/CUDA backends, and neural-network layers, with image and sentiment classification experiments. Built on the open-source [MiniTorch](https://minitorch.github.io/) foundation; upstream attribution and licenses remain in place.
 
 <img src="https://minitorch.github.io/minitorch.svg" width="50%">
 
@@ -25,7 +27,7 @@ mnist_get_data.sh
 python run_tests.py
 ```
 
-This assignment requires the following files from the previous assignments. You can get these by running
+To combine components from earlier MiniTorch modules, use
 
 ```bash
 python sync_previous_module.py previous-module-dir current-module-dir
@@ -35,8 +37,8 @@ The files that will be synced are:
 
         minitorch/tensor_data.py minitorch/tensor_functions.py minitorch/tensor_ops.py minitorch/operators.py minitorch/scalar.py minitorch/scalar_functions.py minitorch/module.py minitorch/autodiff.py minitorch/module.py project/run_manual.py project/run_scalar.py project/run_tensor.py minitorch/operators.py minitorch/module.py minitorch/autodiff.py minitorch/tensor.py minitorch/datasets.py minitorch/testing.py minitorch/optim.py minitorch/tensor_ops.py minitorch/fast_ops.py minitorch/cuda_ops.py project/parallel_check.py tests/test_tensor_general.py
 
-## Task 4.5
-### Task 4.5.1: Training Log for [run_sentiment.py](project/run_sentiment.py)
+## Training results
+### Sentiment classification training log for [run_sentiment.py](project/run_sentiment.py)
 **[sentiment.txt](sentiment.txt)**
 ```
 missing pre-trained embedding for 55 unknown words
@@ -792,7 +794,7 @@ Validation accuracy: 71.00%
 Best Valid accuracy: 76.00%
 ```
 
-### Task 4.5.2: Training Log for [run_mnist_multiclass.py](project/run_mnist_multiclass.py)
+### MNIST classification training log for [run_mnist_multiclass.py](project/run_mnist_multiclass.py)
 **[mnist.txt](mnist.txt)**
 ```
 Epoch 1 loss 2.296558666714976 valid acc 3/16
